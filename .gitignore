@@ -1,0 +1,11 @@
+node_modules
+.next
+.env
+.env.local
+next-env.d.ts
+*.tsbuildinfo
+.env*.local
+.vercel
+
+# Original, uncompressed copies of the images and videos in public/ (kept locally as a backup)
+original-assets/
