@@ -44,6 +44,7 @@ export async function saveSettings(fd: FormData) {
       tagline: str(fd, "tagline"),
       phone: str(fd, "phone"),
       whatsapp: str(fd, "whatsapp"),
+      alt_phone: str(fd, "alt_phone"),
       email: str(fd, "email"),
       address: str(fd, "address"),
       city: str(fd, "city"),
@@ -77,11 +78,19 @@ export async function saveSettings(fd: FormData) {
       }
     }
 
-    const { error } = await supabase.from("site_settings").upsert(row);
+    let { error } = await supabase.from("site_settings").upsert(row);
+    // Databases created before the alternative-phone field: save everything else and say how to add it.
+    const missingAlt = Boolean(error?.message.includes("alt_phone"));
+    if (missingAlt) {
+      delete row.alt_phone;
+      ({ error } = await supabase.from("site_settings").upsert(row));
+    }
     if (error) throw new Error(error.message);
     await logActivity(supabase, "updated", "settings");
     refreshSite();
-    target = `/admin/settings?msg=${enc("Settings saved. The website is updated.")}`;
+    target = missingAlt
+      ? `/admin/settings?error=${enc("Settings saved, except the alternative phone. Run supabase/add-alt-phone.sql in the Supabase SQL editor once, then save again.")}`
+      : `/admin/settings?msg=${enc("Settings saved. The website is updated.")}`;
   } catch (e) {
     target = `/admin/settings?error=${enc(errorMessage(e))}`;
   }

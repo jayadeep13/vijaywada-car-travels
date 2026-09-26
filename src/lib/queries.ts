@@ -6,8 +6,9 @@ import type { Announcement, Car, Location, Poster, Review, Route, Service, SiteS
 export const DEFAULT_SETTINGS: SiteSettings = {
   company_name: "Vijayawada Car Travels",
   tagline: "Car rental, airport transfers and outstation cabs from Vijayawada.",
-  phone: "+91 86883 62789",
-  whatsapp: "+91 86883 62789",
+  phone: "+91 72789 18888",
+  whatsapp: "+91 72789 18888",
+  alt_phone: "+91 98484 69283",
   email: "pswamy0818@gmail.com",
   address: null,
   city: "Vijayawada",

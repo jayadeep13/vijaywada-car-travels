@@ -5,7 +5,7 @@
 update public.site_settings
 set
   seo_title = 'Vijayawada Car Travels | Affordable Car Rental & Cabs in Vijayawada',
-  seo_description = 'Vijayawada Car Travels: affordable car rental with driver in Vijayawada. Local taxi, airport cabs, one-way & outstation trips. Sedans, Innova, Crysta. Call +91 86883 62789.'
+  seo_description = 'Vijayawada Car Travels: affordable car rental with driver in Vijayawada. Local taxi, airport cabs, one-way & outstation trips. Sedans, Innova, Crysta. Call +91 72789 18888.'
 where id = 1;
 
 -- Check the result:

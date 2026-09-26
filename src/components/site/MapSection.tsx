@@ -25,7 +25,18 @@ export function MapSection({ settings }: { settings: SiteSettings }) {
                 <li className={row}><MapPin className="mt-0.5 size-5 shrink-0 text-accent" aria-hidden /><span>{settings.address}</span></li>
               )}
               {settings.phone && (
-                <li className={row}><Phone className="mt-0.5 size-5 shrink-0 text-accent" aria-hidden /><a href={telHref(settings.phone)} className="font-semibold hover:underline">{settings.phone}</a></li>
+                <li className={row}>
+                  <Phone className="mt-0.5 size-5 shrink-0 text-accent" aria-hidden />
+                  <span className="flex flex-wrap gap-x-2">
+                    <a href={telHref(settings.phone)} className="font-semibold hover:underline">{settings.phone}</a>
+                    {settings.alt_phone && (
+                      <>
+                        <span aria-hidden className="text-mist">/</span>
+                        <a href={telHref(settings.alt_phone)} className="font-semibold hover:underline">{settings.alt_phone}</a>
+                      </>
+                    )}
+                  </span>
+                </li>
               )}
               {wa && (
                 <li className={row}><MessageCircle className="mt-0.5 size-5 shrink-0 text-accent" aria-hidden /><a href={wa} target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline">Chat on WhatsApp</a></li>

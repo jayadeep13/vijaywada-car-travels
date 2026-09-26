@@ -141,6 +141,8 @@ export type SiteSettings = {
   tagline: string | null;
   phone: string | null;
   whatsapp: string | null;
+  /** Second call number, shown next to the main phone */
+  alt_phone: string | null;
   email: string | null;
   address: string | null;
   city: string | null;

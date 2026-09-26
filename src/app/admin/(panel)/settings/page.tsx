@@ -35,6 +35,7 @@ export default async function SettingsPage({ searchParams }: { searchParams: Pro
             <Field name="tagline" label="Tagline" defaultValue={s.tagline} />
             <Field name="phone" label="Phone" defaultValue={s.phone} placeholder="+91 98XXX XXXXX" />
             <Field name="whatsapp" label="WhatsApp number" defaultValue={s.whatsapp} placeholder="+91 98XXX XXXXX" hint="Used for every WhatsApp button and booking message." />
+            <Field name="alt_phone" label="Alternative phone (optional)" defaultValue={s.alt_phone} placeholder="+91 98XXX XXXXX" hint="Shown as a second number to call." />
             <Field name="email" label="Email" type="email" defaultValue={s.email} />
             <Field name="business_hours" label="Business hours" defaultValue={s.business_hours} placeholder="Open 24 hours, all days" />
             <TextArea name="address" label="Address" defaultValue={s.address} rows={2} className="md:col-span-2" />

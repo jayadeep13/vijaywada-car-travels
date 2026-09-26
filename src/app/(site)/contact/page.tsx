@@ -7,9 +7,9 @@ import { PAGE_KEYWORDS, pageMetadata } from "@/lib/seo";
 export const revalidate = 300;
 
 export const metadata: Metadata = pageMetadata({
-  title: "Contact Vijayawada Car Travels | Call or WhatsApp +91 86883 62789",
+  title: "Contact Vijayawada Car Travels | Call or WhatsApp +91 72789 18888",
   absoluteTitle: true,
-  description: "Contact Vijayawada Car Travels on +91 86883 62789 by call or WhatsApp to book an affordable car or cab in Vijayawada. Directions and map to our office.",
+  description: "Contact Vijayawada Car Travels on +91 72789 18888 by call or WhatsApp to book an affordable car or cab in Vijayawada. Directions and map to our office.",
   path: "/contact",
   keywords: PAGE_KEYWORDS.contact,
 });

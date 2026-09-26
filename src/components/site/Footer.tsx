@@ -99,6 +99,9 @@ export function Footer({ settings, services, cars, routes }: Props) {
               {settings.phone && (
                 <ContactCard href={telHref(settings.phone)} label="Call us" value={settings.phone} icon={<Phone className="size-4" aria-hidden />} tint="bg-[#86ad49]/15 text-[#a6cc68]" />
               )}
+              {settings.alt_phone && (
+                <ContactCard href={telHref(settings.alt_phone)} label="Alternative number" value={settings.alt_phone} icon={<Phone className="size-4" aria-hidden />} tint="bg-[#86ad49]/15 text-[#a6cc68]" />
+              )}
               {wa && (
                 <ContactCard href={wa} external label="WhatsApp" value="Chat with us" icon={<SOCIAL_ICONS.whatsapp className="size-4" />} tint="bg-[#25d366]/15 text-[#4ade80]" />
               )}

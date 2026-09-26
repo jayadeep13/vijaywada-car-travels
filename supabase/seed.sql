@@ -8,10 +8,10 @@ insert into public.site_settings (id, company_name, tagline, phone, whatsapp, em
   seo_title, seo_description, footer_text, latitude, longitude, maps_url, maps_embed_url, social_links)
 values (1, 'Vijayawada Car Travels',
   'Car rental, airport transfers and outstation cabs from Vijayawada.',
-  '+91 86883 62789', '+91 86883 62789', 'pswamy0818@gmail.com',
+  '+91 72789 18888', '+91 72789 18888', 'pswamy0818@gmail.com',
   'Vijayawada', 'Andhra Pradesh', 'Open 24 hours, all days',
   'Vijayawada Car Travels | Affordable Car Rental & Cabs in Vijayawada',
-  'Vijayawada Car Travels: affordable car rental with driver in Vijayawada. Local taxi, airport cabs, one-way & outstation trips. Sedans, Innova, Crysta. Call +91 86883 62789.',
+  'Vijayawada Car Travels: affordable car rental with driver in Vijayawada. Local taxi, airport cabs, one-way & outstation trips. Sedans, Innova, Crysta. Call +91 72789 18888.',
   'Chauffeur-driven cars for local, airport, outstation and corporate travel from Vijayawada, Andhra Pradesh.',
   16.518358656011564, 80.67640439970845,
   'https://www.google.com/maps/place/CHARAN+CAR+TRAVELS/@16.51844,80.6759116,19.96z/data=!4m6!3m5!1s0x3a35e5f9e88ca1b5:0x51d0e48132611621!8m2!3d16.5183812!4d80.67639!16s%2Fg%2F11txpht7qv?entry=ttu&g_ep=EgoyMDI2MDkyMi4wIKXMDSoASAFQAw%3D%3D',

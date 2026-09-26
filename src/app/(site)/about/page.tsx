@@ -13,10 +13,10 @@ export const revalidate = 300;
 export const metadata: Metadata = pageMetadata({
   title: "About Vijayawada Car Travels | Trusted Car Rental in Vijayawada",
   absoluteTitle: true,
-  description: "Meet Vijayawada Car Travels, founded by Potru Nagaraju: affordable chauffeur-driven cars for local, airport, outstation and corporate travel from Vijayawada.",
+  description: "Meet Vijayawada Car Travels, founded by Nagaraju: affordable chauffeur-driven cars for local, airport, outstation and corporate travel from Vijayawada.",
   path: "/about",
   keywords: PAGE_KEYWORDS.about,
-  image: { url: "/og-image.jpg", alt: "Potru Nagaraju, founder of Vijayawada Car Travels, with the fleet" },
+  image: { url: "/og-image.jpg", alt: "Nagaraju, founder of Vijayawada Car Travels, with the fleet" },
 });
 
 export default async function AboutPage() {
@@ -29,7 +29,7 @@ export default async function AboutPage() {
         <div className="relative aspect-[4/3] w-full sm:aspect-[16/9] lg:aspect-[3/1]">
           <Image
             src="/ABOUT.webp"
-            alt="Potru Nagaraju, Founder of Vijayawada Car Travels, with the fleet"
+            alt="Nagaraju, Founder of Vijayawada Car Travels, with the fleet"
             fill
             priority
             sizes="100vw"
@@ -44,7 +44,7 @@ export default async function AboutPage() {
           <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/45 to-transparent" aria-hidden />
           <div className="absolute bottom-3 left-3 rounded-full bg-white/95 px-4 py-2 shadow-sm backdrop-blur sm:bottom-5 sm:left-5">
             <p className="text-xs font-bold text-ink sm:text-sm">
-              Potru Nagaraju <span className="font-medium text-graphite">· Founder, {s.company_name}</span>
+              Nagaraju <span className="font-medium text-graphite">· Founder, {s.company_name}</span>
             </p>
           </div>
         </div>
@@ -69,14 +69,14 @@ export default async function AboutPage() {
             <div className="relative aspect-square w-56 overflow-hidden rounded-2xl bg-paper sm:w-64">
               <Image
                 src="/FOUNDER1.webp"
-                alt="Potru Nagaraju, Founder of Vijayawada Car Travels"
+                alt="Nagaraju, Founder of Vijayawada Car Travels"
                 fill
                 sizes="(min-width: 640px) 256px, 224px"
                 quality={90}
                 className="object-cover"
               />
             </div>
-            <p className="mt-4 text-lg font-extrabold tracking-tight">Potru Nagaraju</p>
+            <p className="mt-4 text-lg font-extrabold tracking-tight">Nagaraju</p>
             <p className="text-sm text-graphite">Founder, {s.company_name}</p>
           </div>
         </div>

@@ -200,6 +200,7 @@ create table if not exists public.site_settings (
   tagline text,
   phone text,
   whatsapp text,
+  alt_phone text,
   email text,
   address text,
   city text default 'Vijayawada',
